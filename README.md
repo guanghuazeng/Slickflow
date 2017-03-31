@@ -1,4 +1,4 @@
-# Slickflow
+﻿# Slickflow
 .NET Workflow Engine
 
 Slickflow is implemented by activity and transition iterative algorithm. It supports sequence, split/merge, sub-process, multi-instance, withdraw, sendback and reverse pattern.
@@ -13,8 +13,8 @@ There are demo programs that you can find in WebDemo, WinformDemo project.
 
 The source project is under LGPL license, we also provide customers commercial license. if you have any further inquery, please feel free to contact us: 
 
-
-QQ(Author): 47743901
+Quick Start:
+https://github.com/besley/Slickflow/wiki
 
 Slickflow website:
 http://www.slickflow.com
@@ -24,6 +24,48 @@ http://www.slickflow.com/demo/index
 
 Document:
 http://www.slickflow.com/wiki/index
+
+QQ(Author): 47743901
+
+EMail: sales@ruochisoft.com
+
+
+
+### Slickflow(1.5.8) 企业版更新说明:
+1. 增加加签通过率类型字段CompareType，用于加签办理页面动态指定（非设计器指定，是运行时决策指定）变量传入；
+
+示例如下：
+
+        //动态变量数据格式(包含在WfAppRunner属性中)
+        "DynamicVariables": {
+            "SignForwardType": "SignForwardBefore",
+            "SignForwardCompleteOrder": 2,
+            "CompareType":  "Count"
+        }
+
+2. 实现会签加签通过率两种类型(个数和百分比)的全覆盖功能；
+
+3. 修正Gateway节点之后Transition定义的ReceiverType类型未能获取的BUG；
+
+4. 实现跨Gateway节点退回的功能(OrSplit单一分支撤回)。
+
+
+### Slickflow(1.5.7) 企业版更新说明:
+1. Slickflow.Designer 设计器项目全面重构编写，更新如下：
+
+  1). 升级到ASP.NET MVC5;
+  
+  2). 升级到BOOTSTRAP3.3.7；
+  
+  3). 图形库框架升级到JSPLUMB2.2.8，图形体验更流畅；
+  
+  4). AG-Grid取代SlickGrid，AG-Grid在开源社区方面的建设更加完善；
+  
+2. 项目解决方案VS2017版本建立。
+
+### Slickflow(1.5.6) 企业版更新说明：
+1. 提供获取流程发起人的流程图连线定义（Transition property page）
+2. 修正子流程节点变量名称改变后的条件判断处理；
 
 
 ### Slickflow(1.5.5) Demo版本功能说明：
